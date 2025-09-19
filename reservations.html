@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lúmina Reservations - Plan Your Evening</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="page-reservations">
+    <header class="site-header">
+        <div class="logo">Lúmina</div>
+        <nav class="site-nav">
+            <button class="nav-toggle" aria-label="Toggle navigation"></button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="experience.html">Experiences</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="reservations.html">Reserve</a>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div>
+                <span class="eyebrow">Secure Your Journey</span>
+                <h1>Begin the orchestration of your evening</h1>
+                <p>Every reservation unlocks a personalized sensory profile. Tell us about your dream dinner, and we will tailor the experience around your story.</p>
+            </div>
+        </section>
+
+        <section class="reservation-form">
+            <form id="reservationForm">
+                <div class="form-grid">
+                    <label>
+                        <span>Name</span>
+                        <input type="text" name="name" placeholder="Your full name" required>
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="you@example.com" required>
+                    </label>
+                    <label>
+                        <span>Date</span>
+                        <input type="date" name="date" required>
+                    </label>
+                    <label>
+                        <span>Time</span>
+                        <input type="time" name="time" required>
+                    </label>
+                    <label>
+                        <span>Guests</span>
+                        <input type="number" name="guests" min="1" max="8" value="2" required>
+                    </label>
+                    <label>
+                        <span>Preferred Experience</span>
+                        <select name="experience" required>
+                            <option value="tasting">Equinox Reverie Tasting</option>
+                            <option value="observatory">Chef's Observatory</option>
+                            <option value="conservatory">Whispering Conservatory Walk</option>
+                            <option value="salon">Synesthetic Salon</option>
+                        </select>
+                    </label>
+                </div>
+                <label class="textarea-label">
+                    <span>What sensation are you craving?</span>
+                    <textarea name="notes" rows="4" placeholder="Describe the atmosphere, flavors, or music you'd love to explore."></textarea>
+                </label>
+                <button type="submit" class="btn btn--primary">Request reservation</button>
+                <p class="form-feedback" role="status" aria-live="polite"></p>
+            </form>
+            <aside class="reservation-note">
+                <h2>How we craft your night</h2>
+                <ul>
+                    <li>Within 12 hours, a concierge will reach out to build your sensory profile.</li>
+                    <li>Customized playlists and scent infusions can be prepared upon request.</li>
+                    <li>Private transport via vintage electric boat is available for waterfront arrivals.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section id="private" class="private-dining">
+            <div class="section-header">
+                <span class="eyebrow">Private Salons</span>
+                <h2>Design a night that becomes legend</h2>
+                <p>From vow renewals to album listening parties, our creative technologists and culinary team will craft a sensory saga entirely for you.</p>
+            </div>
+            <div class="grid private-grid">
+                <article>
+                    <h3>Synesthetic Salon</h3>
+                    <p>Customized projection mapping, edible centerpieces, and a personal scent curator for up to 20 guests.</p>
+                </article>
+                <article>
+                    <h3>Hidden Conservatory</h3>
+                    <p>A secret wing of the greenhouse with bioluminescent blooms, perfect for intimate proposals and anniversaries.</p>
+                </article>
+                <article>
+                    <h3>Resonance Lounge Takeover</h3>
+                    <p>Collaborate with our composer to script a sonic tasting for your guests, synchronized with cocktails and culinary performances.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <strong>Lúmina</strong>
+            <p>128 Oriole Avenue, Toronto · +1 (416) 555-0199</p>
+        </div>
+        <div class="footer-links">
+            <a href="mailto:hello@luminadining.com">hello@luminadining.com</a>
+            <a href="about.html">Our story</a>
+            <a href="reservations.html">Private salons</a>
+        </div>
+        <p class="footer-note">© <span class="current-year"></span> Lúmina Dining Collective. Crafted with reverence for the natural world.</p>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>
