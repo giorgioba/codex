@@ -30,3 +30,14 @@ python3 -m http.server
 ```
 
 Then visit [http://localhost:8000](http://localhost:8000) to explore the experience.
+
+## Deploying to GitHub Pages
+
+This repository is preconfigured with a GitHub Actions workflow that publishes the static site to GitHub Pages on every push to the `main` branch.
+
+1. Push the repository to GitHub if you have not already.
+2. In your GitHub repository, navigate to **Settings → Pages** and choose **GitHub Actions** as the source. Save the settings.
+3. Trigger the workflow by pushing to `main` (or run it manually from the **Actions** tab). The workflow uploads the repository contents as a static artifact and deploys it to the special `github-pages` environment.
+4. Once the workflow completes, the deployed site URL appears in the workflow summary and on the **Pages** settings screen.
+
+If you prefer a custom domain, configure it in **Settings → Pages → Custom domain** and add the appropriate DNS records.
